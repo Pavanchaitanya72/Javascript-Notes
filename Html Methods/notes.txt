@@ -1,0 +1,5 @@
+elem.getAttribute(name)
+elem.setAttribute(name, value)
+elem.removeAttribute(name)
+elem.hasAttribute(name)
+elem.attributes

@@ -1,0 +1,9 @@
+nav{
+    display: flex;
+    background-color: cyan;
+}
+
+nav li{
+    list-style-type: none;
+    padding: 0 23px;
+}

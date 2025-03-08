@@ -1,0 +1,28 @@
+document querySelectorAll
+--> Returns all elements inside an element matching the given CSS Selector.
+
+document querySelector
+--> Returns the first element for the given CSS Selector. A efficient version of elem.querySelectorAll(css)[0].
+
+document.getElementsByTagName
+--> Returns elements with the given tag name.
+
+docuemnt.getElementsByClassName
+--> Returns elements that have the given CSS class.
+
+docuemnt.getElementsByTagName
+--> Returns the elements thta have the tag name.
+
+console.log(document.querySelector(".card").getElementsByTagName("a"))
+
+document.getElementsByName 
+-->Searches a elements based on Name.
+
+Matches, Closest and Contains
+
+elem.matches(CSS) --> To check if element matches the given CSS Selector.
+
+elem.closest(CSS) --> To look for the nearest ancestor that matches the given CSS - selector. The elem itself is also checked.
+
+elemA.contains(CSS) --> Returns true if elemB is inside elemeA (a descendant of elemA) or when elemA==elemB
+

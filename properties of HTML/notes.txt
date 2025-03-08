@@ -1,0 +1,17 @@
+INNER HTML - OUTER HTML
+console dir function
+console.log shows the element DOM tree
+console.dir shows the element as an output with its properties.
+
+tagName/ node Name
+used to read tag name of an element.
+tagName - only exists for element nodes.
+nodeName - defined for any node(text, comment etc).
+
+innerhtml property allows to get the HTML inside the element as a string.(valid for element nodes only)
+
+The outerhtml property contains the full HTML innerhtml+ the element itself.
+
+textContent - only displays the text content.
+
+hidden - It specifies whether the element is visible or not.

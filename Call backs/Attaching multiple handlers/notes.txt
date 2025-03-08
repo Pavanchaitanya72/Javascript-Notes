@@ -1,0 +1,10 @@
+PROMISE API-
+
+METHODS-
+Promise.all(promises) --> Waits for all promises to resolve and returns the array of their results. If anyone fails, 
+                          it becomes the error and all other results will be ignored.
+Promise.allSettled(promises) --> Waits for all the promises to settle and returns their results as an array of objects with status and value.
+Promise.race(promises) --> waits for the first promises to settle and its result/error becomes the outcome.
+Promise.any(promises) --> waits for the first promise to fulfill(and not rejected), and its result becomes the outcome. Throws Aggregate Error if all the promises are rejected.
+Promise.resolve(value) --> makes a resolved promise with the given value.
+Promise.reject(Error) --> makes rejected promise

@@ -1,0 +1,43 @@
+Asynchronours -
+These are the actions that we initiate now and they finish later.
+e.g. setTimeout.
+
+SYNCHRONOUS -
+The actions initiate and finishes one-by-one. 
+
+SYNCHRONOUS PROGRAMMING:
+let a=prompt("enter name:")
+let b=prompt("enter age:")
+let c=prompt("enter fav color:")
+console.log(a+"is of" + b + "and his fav color" + c)
+
+Asynchronours Programming:
+
+console.log("START")
+setTimeout(function(){
+    console.log("hey i am good!");
+},3000)
+console.log("END")
+
+Call back functions:
+
+Pyramid Dooms:
+when we have call backs, the code gets difficult to manage.
+
+Promises-
+let promise = new Promise(function(resolve, reject)){
+    // executor
+})
+
+resolve(value) --> If the job is finished successfully.
+reject(value) --> If the job fails.
+
+The promise object returned by the new promise constructor has these properties.
+state: Initially pending, then changes to either "fulfilled" when resolve is called or "rejected"
+when reject is called.
+
+result: initially undefined, then changes to value if resolved or error when rejected.
+
+.then() and .catch() will be used in the Promises to resolve and reject the erorrs.
+promise.then(....)
+promise.catch(....)

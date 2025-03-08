@@ -1,0 +1,8 @@
+INTERACTIONS
+
+ALERT - It is used to invoke the mini window with message alert.
+code - alert("HELLO")
+PROMPT - Used to take user input as string.
+CODE - n=prompt("HI", "NO(optinal and default)")
+CONFIRM - shows a message and waits for the user to press ok or cancel.
+Return true for ok and false for cancel.

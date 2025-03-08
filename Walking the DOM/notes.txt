@@ -1,0 +1,38 @@
+DOM TREE Refers to the HTML page where all the nodes are objects. There can be 3 main types of nodes in the DOM tree:
+1.Text nodes
+2.element nodes
+3.comment nodes
+
+In html page
+<html> --> root.
+<head> and <body> --> children.
+
+Auto Correction:
+If an erroneous HTML is encountered by the browser, it tends to correct it.
+for example, if we put something after the body, it is automatically moved inside the body.
+Anothe example is <table> tag which must contain <tbody>.
+
+document.body --> we get body tag.
+document.head--> we get head tag.
+document.title --> we get the title.
+document.documentElement --> we get complete html.
+
+Children of an element
+
+child nodes --> elements that are direct children 
+for example head & body are children of <html>
+Descendant nodes --> All nested elements, children, these children and so on..
+
+firstChild, lastChild & childNodes
+element.firstChild --> first child element.
+element.lasChild --> last child element.
+element.childNodes --> All child nodes.
+
+
+elem.childNodes[0]=== elem.firstChild
+elem.childNodes[0] access all the child nodes.
+elem.childNodes[elem.childNodes.length -1] === elem.lastChild
+
+elem.hasChildNodes() --> returns True if child nodes are present.
+
+

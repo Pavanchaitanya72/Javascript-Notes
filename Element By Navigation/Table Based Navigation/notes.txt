@@ -1,0 +1,18 @@
+Table Links
+
+Creation DOM elements may provide additional properties
+specufic to their type for convenience.
+
+Table elements support the following properties:
+table.rows --> collection of tr elements.
+table.caption
+table.tHead
+table.tFoot
+table.tBodies
+table.rows
+
+tr.cells  --> collection of td and th
+tr.sectionRowIndex --> index of tr inside enclosing element.
+tr.rowIndex --> Row number starting from 0.
+
+tr.cellIndex --> no.of cells inside enclosing <tr>

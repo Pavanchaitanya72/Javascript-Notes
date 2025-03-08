@@ -1,0 +1,43 @@
+ERROR HANDLING -
+ try and catch
+
+ try{
+    ...try the code
+ }
+ catch{
+    ...error handling
+ }
+
+first try code is executed.
+if there is no error, catch is ignored else catch is executed.
+
+if an exception happens in scheduled code, like in setTimeout, then try... catch wont catch it:
+try{
+    setTimeout(function(){
+        //error code.  --> script dies and catch wont work.
+    }
+    catch...
+}
+
+ERROR OBJECT AND CUSTOM ERRORS
+
+for all the built-in errors , the error object has two main properties:
+
+try{
+    hey; //error variable not defined.
+} 
+catch(err){
+    alert(err.name)
+    alert(err.message)
+    alert(err.stack)
+}
+
+Errors = new SyntaxError or new ReferencError
+
+FINALLY BLOCK:
+//close the file
+//exit the loop
+//write to the log files.
+It will executed every time.
+after try if there were no errors
+after catch if there were errors

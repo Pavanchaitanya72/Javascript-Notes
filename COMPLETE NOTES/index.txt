@@ -1,0 +1,18 @@
+DOM, BOM AND Window Object.
+
+Window object represents browser window and provides methods to control it.
+It is a global object.
+
+DOM - document object model.
+DOM represents the page content as HTML.
+document.body --> Page body as JS object.
+document.body.style.background= "green".[Changes the background color to green].
+
+
+BOM - Browser Object model
+The browser Object model(BOM) represents additional objects provided by the browser(host environment)
+for working with everything except the document.
+The functions alert/confirm/prompt are also a part of the BOM.
+
+location href="https://codewithharry.com";
+Redirect to another link.

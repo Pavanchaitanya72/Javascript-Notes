@@ -1,0 +1,51 @@
+Chapter - 11 
+Oops concept:
+-->Abstraction
+-->Inheritence
+-->Polymorphism
+-->Encapsulation
+
+Prototypes and __proto__
+prototype that is either null or references another object.
+when we try to read a property from a prototype and its missing, Javascript automatically takes if from the prototype.
+This is called "Prototype Inheritence".
+
+Setting prototype:
+Setting __proto__
+
+example:
+let a={
+    name:"harry",
+    language:"Javascript",
+    run:()=>{
+        alert("self run")
+    }
+}
+console.log(a)
+
+let p={
+    run: ()=>{
+        alert("run)
+    }
+}
+
+a.__proto__=p
+a.run()
+
+
+CLASSES AND OBJECTS
+SYNTAX:
+class MyClass{
+    //class methods
+    constructor(){....}
+    method1(){....}
+    method2(){....}
+}
+
+CONSTRUCTORS:
+The constructor() methods is called automatically by new, so we can initialize the object there.
+
+Inheritance:
+This is the way for one class to extend another class. This is done by using the "extends" Keyword.
+extends keyword is used to extend another class.
+

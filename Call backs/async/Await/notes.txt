@@ -1,0 +1,8 @@
+Async/Await -
+
+A function can be made async by using async keyword like this:
+async function harry(){
+    return 7;
+}
+
+An async function always returns a promise. Other values are wrapped in a promise automatically.

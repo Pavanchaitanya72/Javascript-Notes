@@ -1,0 +1,44 @@
+insertion methods-
+node.append(e)--> append at the end of node.
+node.prepend(e)--> Insert at the beginning of node.
+node.before(e)--> Insert before node.
+node.after(e)--> Insert after node.
+node.replaceWith(e)--> replaces node with the givne node.
+
+insert Adjacent HTML /Text/ Element
+
+"beforebegin" - Insert HTML immediately before Element
+"afterbegin" - Insert HTML into element at the beginning.
+"beforeend" - Insert HTML into element at the end.
+"afterend" - Insert HTML immediately after element.
+
+Node Removal:
+To remove a node there's a method node.remove().
+let id1=document.getElementById("id1");
+id1.remove()
+
+
+CHANGING HTML CLASSES:
+
+first.className="......"
+
+elem.classList.add/remove("class) - add / remove a class.
+
+elem.classList.toggle("class") - Adds the class if it doesnot exist, otherwise remove it.
+
+elem.classList.contains("class") - checks for the given class, returns true/false.
+
+
+setInterval and setTimeout
+
+syntax of setTimeout is:
+let timerId=setTimeout(function, <delay>,<arg1>,<arg2>)
+returns a timer id
+<delay> in milliseconds.
+
+setInterval -
+syntax-
+let timerId=setInterval(function, <delay>,<arg1>,<arg2>)
+returns timerId
+but set interval it runs regular interval of time.
+it is a infinite while loop.

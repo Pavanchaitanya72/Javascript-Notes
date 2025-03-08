@@ -1,0 +1,3 @@
+Create a todo list app capable of storing your TODOs in local storage.
+Add an option to create, delete and access all the TODO's.
+Try to make UI as good as possible.

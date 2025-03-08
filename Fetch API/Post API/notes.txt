@@ -1,0 +1,4 @@
+POST REQUESTS -
+To make a POST request, we need to use fetch options
+1.method --> HTTP-method eg-POST.
+2.body --> the request body.

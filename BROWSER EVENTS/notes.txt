@@ -1,0 +1,33 @@
+DOM EVENTS:
+
+Mouse Events - click, context menu(right click), mouseover/mouseout, mousedown/mouseup, mousemove
+
+Keyboard events - keydown and keyup
+
+form element events - submit, focus etc.
+
+Document events - DOMContentLoaded
+
+Handling Events - Events can be handled through HTML attributes.
+
+<input value="hey" onclick="alert('hey)" type="button">
+
+events can be handled through "onclick".
+
+ADD AND REMOVE EVENT LISTENERS
+
+element.addEventListener(event, handler)
+
+element.removeEventListener(event, handler)
+
+removeEventListener works when function objcet is same.
+
+EVENT OBJECT:
+
+when an event happens, the browser creates an event object, puts details into it and passes it as an argument to the handler.
+elem.onclick=function(event){
+    ......
+}
+event.type : Event type
+event.current Target : element that handled the event.
+event.clientX / event.clientY: coordinates of the cursor.

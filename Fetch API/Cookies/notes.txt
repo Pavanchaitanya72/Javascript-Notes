@@ -1,0 +1,60 @@
+Cookies -
+Cookies are small strings of data stored directly in the browser.
+In Javascript, document cookie provides access to cookies.
+
+We can also access cookies using document.Cookie
+property :
+alert(document.cookie) {contains key = value pairs delimited by semicolon(;)}
+
+Writing to cookie 
+An assignment to document Cookie is treated specifically in a way that a write operation doesnot touch other cookies.
+document.Cookie = "user = harry" {update only cookie named user to Harry}
+
+Cookie options:
+
+Cookies have several options which can be provided after key=value to a set call like this:
+example-
+document.Cookie ="user=john"; path=/a; expires= Tue, 29 March 2025 03:18:22 GMT
+
+path option makes the cookie visible at /a, /a/b etc.. expires sets the cookie expiration time.
+
+NOTE:
+Name = value pair, after encodeURIComponent, should not exceed 4KB.
+Total no.of Cookies per domain is limited to around 20+ (exact number is browser dependent)
+
+LOCAL STORAGE-
+ methods-
+setItem(key, value) --> store key/value pair
+getItem(key) --> get the value by key
+removeItem(key) --> remove the key with its value
+clear() --> delete everything.
+key(index) --> get the key on a given position.
+length --> the number of stored items
+We can get and set values like an object.
+localStorage.one=1
+alert(localStorage.one)
+
+key Notes:
+Both key and values must be strings.
+We can use the two JSON methods to store objects in local storage.
+
+JSON.Stringify(object) --> converts the object to JSOON strings.
+JSON.parse(String) --> converts string to objects (must be valid JSON)
+
+SESSION STORAGE:
+The session storage exists only within the current browser tab.
+Another tab with same page will have a different storage.
+
+The data survives page refresh, but not closing/opening the tab.
+
+Storage Event -
+when the data gets updated in local storage or session storage, storage event triggers with these properties:
+Key --> The key
+old value --> Previous value
+new value --> New value
+url --> page url
+Storage Area --> local or session storage
+
+We can listen the onstorage event of window which is triggered when updates are made to the same storage from other documents
+
+
